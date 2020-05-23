@@ -1,8 +1,5 @@
 'use strict'
 
 const idxe = require('./index')
-idxe.koki.searchManga('Isekai')
-    .then(x => {
-        console.log(x)
-    })
-    .catch(x => console.error(x))
+idxe.kiry.getMangaPage('https://kiryuu.co/akatsuki-no-yona-chapter-75/')
+    .then(x => console.log(x))

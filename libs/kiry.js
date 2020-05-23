@@ -5,7 +5,7 @@ const cheerio = require('cheerio')
 
 module.exports = {
     async searchManga(keyword, page = 1) {
-        let url = `https://komikindo.co/page/${page}/?s=${encodeURI(keyword)}`
+        let url = `https://kiryuu.co/page/${page}/?s=${encodeURI(keyword)}`
         let $ = cheerio.load(await (await fetch(url)).text())
 
         let data = $('div.listupd .bs').map((i, e) => {
